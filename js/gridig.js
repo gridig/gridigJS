@@ -12,7 +12,7 @@ let griddA;
 
 let griddNo = 0;
 
-zoomGridd = 50;
+zoomGridd = 100;
 
 function calcGridd() {
 	windowW = window.innerWidth;

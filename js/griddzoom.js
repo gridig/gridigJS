@@ -17,9 +17,9 @@ document.getElementById('gridig').appendChild(griddZoomOut);
 function griddZoomCheck() {
 	let zoomddIn = document.getElementById('zoomdd-in');
 	let zoomddOut = document.getElementById('zoomdd-out');
-	if (zoomGridd > 70) {
+	if (zoomGridd > 175) {
 		zoomddIn.innerHTML = 'max';
-	} else if (zoomGridd < 30) {
+	} else if (zoomGridd < 75) {
 		zoomddOut.innerHTML = 'min';
 	} else {
 		zoomddIn.innerHTML = '+';
@@ -29,10 +29,10 @@ function griddZoomCheck() {
 
 function griddZoom() {
 	document.getElementById('zoomdd-in').addEventListener('click', function griddAreaIn() {
-		if (zoomGridd > 70) {
+		if (zoomGridd > 175) {
 			return;
 		}
-		zoomGridd = zoomGridd + 25;
+		zoomGridd = zoomGridd + 50;
 		griddZoomCheck();
 		calcGridd();
 		griddArea();
@@ -40,10 +40,10 @@ function griddZoom() {
 	});
 
 	document.getElementById('zoomdd-out').addEventListener('click', function griddAreaOut() {
-		if (zoomGridd < 30) {
+		if (zoomGridd < 75) {
 			return;
 		}
-		zoomGridd = zoomGridd - 25;
+		zoomGridd = zoomGridd - 50;
 		griddZoomCheck();
 		calcGridd();
 		griddArea();
