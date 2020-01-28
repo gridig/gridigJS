@@ -32,7 +32,7 @@ function griddZoom() {
 		if (zoomGridd > 175) {
 			return;
 		}
-		zoomGridd = zoomGridd + 50;
+		zoomGridd = zoomGridd * 1.25;
 		griddZoomCheck();
 		calcGridd();
 		griddArea();
@@ -43,7 +43,7 @@ function griddZoom() {
 		if (zoomGridd < 75) {
 			return;
 		}
-		zoomGridd = zoomGridd - 50;
+		zoomGridd = zoomGridd / 1.25;
 		griddZoomCheck();
 		calcGridd();
 		griddArea();

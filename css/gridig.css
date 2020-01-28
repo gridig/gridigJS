@@ -1,4 +1,4 @@
-* {	
+* {
 	box-sizing: border-box;
 }
 
@@ -67,4 +67,12 @@ body {
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
+}
+
+#zoomdd-in {
+  cursor: pointer;
+}
+
+#zoomdd-out {
+  cursor: pointer;
 }
