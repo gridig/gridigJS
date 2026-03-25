@@ -205,11 +205,11 @@ Zoom operates by adding or removing one row or column at a time, not by applying
 ## Development
 
 ```bash
-pnpm install
-pnpm dev          # dev server with demo at /demo/index.html
-pnpm test         # run tests (49 tests)
-pnpm test:watch   # run tests in watch mode
-pnpm build        # build to dist/
+npm install
+npm run dev          # dev server with demo at /demo/index.html
+npm test             # run tests (49 tests)
+npm run test:watch   # run tests in watch mode
+npm run build        # build to dist/
 ```
 
 ## Architecture
